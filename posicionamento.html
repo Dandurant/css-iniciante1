@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        
+        <title>Posicionamentos (static, relative, absolute e fixed)</title>
+
+        <style type="text/css">
+            
+
+            body{
+
+                background: #007fc7;
+
+
+            }
+
+            #conteiner{
+
+                background: #fff;
+                width: 800px;
+                margin: 10px auto; 
+                padding: 10px;
+                
+            }
+
+            h1{
+
+                /* Position static é o padrão. Quando se usa o position, o comando exige complemento de propriedades de deslocamento (left, right, top, bottom)*/
+                position: static;
+
+            }
+
+            p{
+
+                width: 400px;
+
+            }
+
+            .relative{
+
+                border: 1px solid red;
+                position: relative;
+                top: 20px;
+                left: 80px;
+
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="conteiner">
+
+            <h1>Posicionamentos</h1>
+
+            <p class="relative"> P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi in ipsa sit eius blanditiis voluptatem voluptatibus molestias repellendus, repudiandae perferendis? Beatae, asperiores impedit laudantium cumque perferendis iste expedita incidunt!</p>
+
+            <p> P2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi in ipsa sit eius blanditiis voluptatem voluptatibus molestias repellendus, repudiandae perferendis? Beatae, asperiores impedit laudantium cumque perferendis iste expedita incidunt!</p>
+
+            <p> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi in ipsa sit eius blanditiis voluptatem voluptatibus molestias repellendus, repudiandae perferendis? Beatae, asperiores impedit laudantium cumque perferendis iste expedita incidunt!</p>
+ 
+
+        </div> <!-- Acima, temos um exemplo de fluxo padrão de documento. São elementos do tipo bloco aparecerem um abaixo do outro. -->
+
+    </body>
+
+</html>
