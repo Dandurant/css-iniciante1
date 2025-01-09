@@ -8,6 +8,10 @@
         
         <title>Posicionamentos (static, relative, absolute e fixed)</title>
 
+        <!--O relativo tem seu alinhamento baseado na posição inicial do elemento.
+            O alinhamnto absoluto permite que você alihe uma caixa que é removida do fluxo do documento e se consegue alinhar a caixa baseada em seu conteiner que tenha uma posição
+            O fixo é alinhado baseado na janela do navegador.-->
+
         <style type="text/css">
             
 
@@ -24,6 +28,7 @@
                 width: 800px;
                 margin: 10px auto; 
                 padding: 10px;
+                position: relative;
                 
             }
 
@@ -49,6 +54,23 @@
 
             }
 
+            .absolute{
+
+                position:absolute;
+                border: 1px solid red;
+
+            }
+
+            .fixed{
+
+                position: fixed;
+                background:#f2f2f2;
+                border: 1px solid red;
+                top: 0px;
+                right: 0px;
+
+            }
+
         </style>
 
     </head>
@@ -61,9 +83,9 @@
 
             <p class="relative"> P1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi in ipsa sit eius blanditiis voluptatem voluptatibus molestias repellendus, repudiandae perferendis? Beatae, asperiores impedit laudantium cumque perferendis iste expedita incidunt!</p>
 
-            <p> P2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi in ipsa sit eius blanditiis voluptatem voluptatibus molestias repellendus, repudiandae perferendis? Beatae, asperiores impedit laudantium cumque perferendis iste expedita incidunt!</p>
+            <p class="fixed"> P2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi in ipsa sit eius blanditiis voluptatem voluptatibus molestias repellendus, repudiandae perferendis? Beatae, asperiores impedit laudantium cumque perferendis iste expedita incidunt!</p>
 
-            <p> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi in ipsa sit eius blanditiis voluptatem voluptatibus molestias repellendus, repudiandae perferendis? Beatae, asperiores impedit laudantium cumque perferendis iste expedita incidunt!</p>
+            <p class="absolute"> P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi in ipsa sit eius blanditiis voluptatem voluptatibus molestias repellendus, repudiandae perferendis? Beatae, asperiores impedit laudantium cumque perferendis iste expedita incidunt!</p>
  
 
         </div> <!-- Acima, temos um exemplo de fluxo padrão de documento. São elementos do tipo bloco aparecerem um abaixo do outro. -->
